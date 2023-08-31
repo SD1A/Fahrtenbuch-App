@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewK"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:text="Kennzeichen:">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/viewKennzeichen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/viweN"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#000"
+                    android:text="Name, Vorname:">
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/viewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/viewKilo"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#000"
+                    android:text="Kilometerstand:">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/viewKilometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/green"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:text="private Fahrten:">
+            </TextView>
+
+            <TextView
+                android:id="@+id/viewPrivat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="120km -> 53 %">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:text="geschäftliche Fahrten:">
+            </TextView>
+
+            <TextView
+                android:id="@+id/viewGeschaeftlich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="100km -> 47 %">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/g_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Geschäftlich"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_btn"
+                android:src="@drawable/ic_baseline_add_24"/>
+
+            <Button
+                android:id="@+id/p_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Privat"
+                android:textColor="#000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/startViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_weight="0.50"
+        android:visibility="invisible"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:textSize="20dp"
+            android:text="Geben Sie Ihre Daten ein:" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:textSize="20dp"
+            android:text="Die Daten müssen nur einmalig erfasst werden" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:text="Kennzeichen " />
+
+            <EditText
+                android:id="@+id/EditKennzeichen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtViewN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:text="Name, Vorname " />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="18dp"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewKilo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:text="Kilometerstand " />
+
+
+            <EditText
+                android:id="@+id/editKilometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="18dp"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/speicher_btn"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Speichern"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

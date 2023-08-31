@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HOCHFORMAT -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_datetime_tvTitel"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <DatePicker
+        android:id="@+id/dialog_datetime_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-32dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"/>
+
+    <TimePicker
+        android:id="@+id/dialog_datetime_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:layout_gravity="center_horizontal"
+        android:timePickerMode="spinner"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_datetime_layButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_datetime_btnAbbrechen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Abbruch"/>
+
+        <Button
+            android:id="@+id/dialog_datetime_btnUebernehmen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Speichern"/>
+
+    </LinearLayout>
+</LinearLayout>
